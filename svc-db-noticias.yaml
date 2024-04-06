@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-pod-2
+  name: svc-db-noticias
 spec:
   type: ClusterIP
   selector:
-    app: primeiro-pod
+    app: db-noticias
   ports:
-    - port: 9000
-      targetPort: 80
+    - port: 3306
